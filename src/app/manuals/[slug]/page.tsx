@@ -152,6 +152,26 @@ export default async function ManualDetailPage({ params }: Props) {
           margin: 16px 0;
           border: 1px solid var(--border-color);
         }
+        .markdown-content .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          margin: 18px 0;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 1px solid var(--border-color);
+          background: var(--bg-primary);
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+        }
+        .markdown-content .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
       `}</style>
     </div>
   );
