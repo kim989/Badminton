@@ -172,27 +172,56 @@ export default async function ManualDetailPage({ params }: Props) {
           height: 100%;
           border: 0;
         }
-        .markdown-content .video-link-bar {
-          display: flex;
-          justify-content: flex-end;
-          margin-bottom: 20px;
+        .markdown-content .yt-search-box {
+          background: linear-gradient(135deg, rgba(255, 0, 0, 0.12) 0%, rgba(22, 27, 34, 0.95) 100%);
+          border: 1px solid rgba(255, 77, 77, 0.35);
+          border-radius: 14px;
+          padding: 16px;
+          margin: 20px 0;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
         }
-        .markdown-content .video-direct-btn {
-          display: inline-flex;
+        .markdown-content .yt-search-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 8px;
+        }
+        .markdown-content .yt-search-title {
+          font-weight: 800;
+          font-size: 0.95rem;
+          color: #ff4d4d;
+          display: flex;
           align-items: center;
           gap: 6px;
-          background: rgba(255, 0, 0, 0.15);
-          color: #ff4d4d;
-          border: 1px solid rgba(255, 0, 0, 0.4);
-          padding: 6px 12px;
-          border-radius: 8px;
-          font-size: 0.78rem;
+        }
+        .markdown-content .yt-search-desc {
+          font-size: 0.82rem;
+          color: #9ca3af;
+          margin-bottom: 12px;
+        }
+        .markdown-content .yt-search-btn-list {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        .markdown-content .yt-search-link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: rgba(255, 77, 77, 0.15);
+          border: 1px solid rgba(255, 77, 77, 0.35);
+          color: #ffffff;
+          padding: 10px 14px;
+          border-radius: 10px;
+          font-size: 0.85rem;
           font-weight: 700;
+          text-decoration: none;
           transition: all 0.2s ease;
         }
-        .markdown-content .video-direct-btn:hover {
+        .markdown-content .yt-search-link:hover, .markdown-content .yt-search-link:active {
           background: #ff4d4d;
           color: #ffffff;
+          border-color: #ff4d4d;
         }
       `}</style>
     </div>
