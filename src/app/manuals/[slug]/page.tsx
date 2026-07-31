@@ -157,7 +157,7 @@ export default async function ManualDetailPage({ params }: Props) {
           width: 100%;
           padding-bottom: 56.25%;
           height: 0;
-          margin: 18px 0;
+          margin: 18px 0 8px 0;
           border-radius: 12px;
           overflow: hidden;
           border: 1px solid var(--border-color);
@@ -171,6 +171,28 @@ export default async function ManualDetailPage({ params }: Props) {
           width: 100%;
           height: 100%;
           border: 0;
+        }
+        .markdown-content .video-link-bar {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 20px;
+        }
+        .markdown-content .video-direct-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: rgba(255, 0, 0, 0.15);
+          color: #ff4d4d;
+          border: 1px solid rgba(255, 0, 0, 0.4);
+          padding: 6px 12px;
+          border-radius: 8px;
+          font-size: 0.78rem;
+          font-weight: 700;
+          transition: all 0.2s ease;
+        }
+        .markdown-content .video-direct-btn:hover {
+          background: #ff4d4d;
+          color: #ffffff;
         }
       `}</style>
     </div>
